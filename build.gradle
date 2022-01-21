@@ -6,13 +6,13 @@ plugins {
 	id "com.github.johnrengelman.shadow" version "7.1.0"
 }
 
-def versionObj = new Version(major: 1, minor: 10, revision: 5)
+def versionObj = new Version(major: 1, minor: 11, revision: 0)
 
 version = versionObj.toString()
 group = mod_base_package
 archivesBaseName = mod_id
 
-java.toolchain.languageVersion = JavaLanguageVersion.of(8)
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 compileJava.options.encoding = "UTF-8"
 
 minecraft {
@@ -92,7 +92,7 @@ class Version {
     }
 
     String toString() {
-        "${major}.${minor}.${revision}_$build-MC1.12.2"
+        "${major}.${minor}.${revision}_$build-MC1.18.1"
     }
 }
 

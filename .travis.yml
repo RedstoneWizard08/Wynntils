@@ -1,9 +1,9 @@
 language: java
-dist: trusty
+dist: focal
 install: true
 
 jdk:
-  - oraclejdk8
+  - oraclejdk17
 
 script:
   - ./gradlew clean
